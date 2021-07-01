@@ -1,0 +1,48 @@
+<main>
+  <section class="py-5 text-center container main-container">
+    <br>
+    <br>
+    <div class="row">
+      <div class="d-flex justify-content-between">
+        <div>
+          <p class="stuff-list">Visitors List</p>
+        </div>
+        <div class="d-flex justify-content-end ">
+          <a routerLink="/visitors/create_new" class="btn btn-lg btn-dark btn-space">
+            <mat-icon>add</mat-icon>Create Visitor
+          </a>
+          <button class="btn btn-lg btn-dark">
+            <mat-icon>add</mat-icon>Edit
+          </button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <table class="table table-striped table-dark">
+        <thead>
+        <tr>
+          <th class="table-head" scope="col">#</th>
+          <th class="table-head" scope="col">Name</th>
+          <th class="table-head" scope="col">Mail</th>
+          <th class="table-head" scope="col">Role</th>
+          <th class="table-head" scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let stuff of stuffList">
+          <th class="table-head" scope="row">{{stuff.id}}</th>
+          <td class="table-head">{{stuff.name}}</td>
+          <td class="table-head">{{stuff.email}}</td>
+          <td class="table-head">{{stuff.username}}</td>
+          <td class="table-head">
+            <a>
+              <mat-icon (click)="delete(stuff.id)">delete</mat-icon>
+            </a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>

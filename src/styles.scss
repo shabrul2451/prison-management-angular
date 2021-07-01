@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.info-head{
+  padding: 20px;
+  font-family: Roboto, serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+.add-new-form{
+  width: 100%;
+  background: black;
+  padding: 15px 80px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center!important;
+  .form-input{
+    width: 700px!important;
+    padding: 10px;
+  }
+  label{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+  }
+  button{
+    padding: 15px;
+    max-width: 200px;
+  }
+}
